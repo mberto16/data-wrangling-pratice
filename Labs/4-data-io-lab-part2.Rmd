@@ -1,0 +1,57 @@
+---
+title: "Data I/O Lab, Part 1"
+output: html_document
+---
+
+RUN THIS BEFORE YOU START TO CLEAR ANY VARIABLES/OBJECTS FROM THE R ENVIRONMENT THAT COULD INTERFERE WITH YOUR WORK IN THIS ACTIVITY.
+```{r}
+rm(list=ls())
+```
+
+
+```{r, message = FALSE}
+library(dplyr)
+library(tidyverse)
+library(naniar)
+library(visdat)
+```
+
+1. This lab uses the the Charm City Circulator Dataset, the same data set from Lab 2. Use `here()` and `read_csv()` to load the data set into the `circ` R object.
+```{r}
+
+```
+
+2. Print the number of rows of `circ`
+```{r}
+
+```
+
+
+3. Visualize the missing data patterns of `circ` with `vis_miss`:
+```{r}
+
+```
+
+4. Determine the percent missing in each column using `miss_var_summary`
+
+```{r}
+
+```
+
+5. Determine the number missing in each column using `gg_miss_var`:
+```{r}
+
+```
+
+
+6. Write out `circ` to a file called "Circulator.csv" using `write_csv`:
+```{r}
+
+```
+
+
+7. Write out `circ` to a file called "Circulator.rds" using `write_rds`:
+
+```{r}
+
+```
